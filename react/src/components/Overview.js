@@ -6,8 +6,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Overview() {
     return (
-        <div>
-            <h1>Overview</h1>
+        <div className="overview-container">
+            <div className="overview-header">
+                <h1>Overview</h1>
+            </div>
+            <div className="overview-body">
+                <p>Overview</p>
+                <p>Some text...</p>
+            </div>
         </div>
     )
 };
