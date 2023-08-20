@@ -1,3 +1,35 @@
+/* Base styles for the app */
+
+
+/* default color theme */
+::root {
+  --bg-color: #282c34;         /* Background color */
+  --text-color: #ffffff;       /* Text color */
+  --highlight-color: #61dafb;  /* Highlight color */
+  --accent-color: #ff6347;     /* Accent color */
+  --border-color: #37474f;     /* Border color */
+}
+
+/* dark color theme */
+.dark-theme {
+  --bg-color: #282c34;         /* Background color */
+  --text-color: #ffffff;       /* Text color */
+  --highlight-color: #61dafb;  /* Highlight color */
+  --accent-color: #ff6347;     /* Accent color */
+  --border-color: #37474f;     /* Border color */
+}
+
+/* light color theme */
+.light-theme {
+  --bg-color: #ffffff;         /* Background color */
+  --text-color: #282c34;       /* Text color */
+  --highlight-color: #61dafb;  /* Highlight color */
+  --accent-color: #ff6347;     /* Accent color */
+  --border-color: #37474f;     /* Border color */
+}
+
+
+
 .App {
   text-align: center;
 }

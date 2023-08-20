@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 // react router
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -25,7 +26,7 @@ const Input = () => {
 
 // components
 import Home from './components/Home';
-import About from './components/About';
+import Overview from './components/Overview';
 import NotFound from './components/NotFound';
 
 
@@ -35,7 +36,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="*" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/test" element={<Overview />} />
+          {/* search page */}
+          <Route path="/search" element={<Home />} />
+          {/* routes to user profiles */}
+          <Route path="/:username" element={<Home />} />
         </Routes>
       </Router>
 
