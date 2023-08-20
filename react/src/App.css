@@ -2,7 +2,7 @@
 
 
 /* default color theme */
-::root {
+:root {
   --bg-color: #282c34;         /* Background color */
   --text-color: #ffffff;       /* Text color */
   --highlight-color: #61dafb;  /* Highlight color */
@@ -33,4 +33,12 @@
 .App {
   text-align: center;
 }
+
+/* show borders while developing without changing layout */
+
+* {
+  box-shadow: 0 0 0 1px var(--border-color);
+
+}
+/**/
 
