@@ -1,6 +1,8 @@
 /* Base styles for the app */
 
 
+
+
 /* default color theme */
 :root {
   --bg-color: #282c34;         /* Background color */
@@ -32,6 +34,7 @@
 
 .App {
   text-align: center;
+  background-color: var(--bg-color);
 }
 
 /* show borders while developing without changing layout */
